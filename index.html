@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening Happ VPN...</title>
+    <script>
+        window.onload = function() {
+            // Happ VPN သို့ လမ်းကြောင်းလွှဲမည့် Link
+            var vpnScheme = "happ://import/https://gist.githubusercontent.com/cybershieldvpn/7ef85c1d23a95e9282f15fb5bbaebd6/raw";
+            
+            // 0.5 စက္ကန့်အကြာတွင် App သို့ တိုက်ရိုက် Auto Open လုပ်ပေးမည်
+            setTimeout(function() {
+                window.location.href = vpnScheme;
+            }, 500);
+        };
+    </script>
+</head>
+<body style="text-align: center; font-family: sans-serif; padding-top: 50px;">
+    <h2>Happ VPN သို့ ချိတ်ဆက်နေပါသည်။ ခေတ္တစောင့်ပါ...</h2>
+    <p>အလိုအလျောက် မပွင့်ပါက အောက်ပါ Button ကို နှိပ်ပါ -</p>
+    
+    <a id="openBtn" href="#" style="background: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block;">Open Happ VPN App</a>
+
+    <script>
+        document.getElementById("openBtn").href = "happ://import/https://gist.githubusercontent.com/cybershieldvpn/7ef85c1d23a95e9282f15fb5bbaebd6/raw";
+    </script>
+</body>
+</html>
